@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Opet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style/master.css" />
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154733061-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154733061-6');
+</script>
+</head>
+
+<body>
+    <!--Overlay & Modal-->
+        <div id="modal-container">
+            <div class="modal-background">
+                <div class="modal">
+                    <h2 id="modal_title"></h2>
+                    <p>
+                        <div id="modal_content"></div>  
+                        <button class="close" type="button" onclick="Overlay('hide');">Kapat</button>
+                    </p>
+                    <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+                        <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <a href="#" id="unfolding" data-effect="sketch"></a>
+    <!--Overlay & Modal-->
+
+    <script src="app/krpano.js"></script>
+    <div id="pano" style="width:100%;height:100%;">
+        <noscript>
+            <table style="width:100%;height:100%;">
+                <tr style="vertical-align:middle;text-align:center;">
+                    <td>ERROR:<br><br>Javascript not activated<br><br></td>
+                </tr>
+            </table>
+        </noscript>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="app/app.js"></script>
+
+    <audio autoplay>
+  <!--<source src="/music/Hey.mp3" type='audio/mpeg; codecs="mp3"'>-->
+</audio>
+
+</body>
+</html>
